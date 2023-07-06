@@ -14,8 +14,7 @@ import java.util.List;
 
 @ApplicationScoped
 @Path("/path")
-@Produces(MediaType.APPLICATION_JSON)
-@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.TEXT_PLAIN)
 public class PathResource {
     @GET
     @Path("/list/{primaryKey: .+}")
